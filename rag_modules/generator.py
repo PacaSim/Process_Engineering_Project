@@ -6,9 +6,6 @@ from langchain_openai import ChatOpenAI
 
 def create_rag_chain(history_aware_retriever):
     """
-    문서 기반 답변 생성 체인을 구성합니다.
-    검색된 문서를 기반으로 정확한 답변을 생성하며, 환각을 방지합니다.
-
     Args:
         history_aware_retriever: 대화 기록을 고려하는 검색기
 

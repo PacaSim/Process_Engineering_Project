@@ -5,9 +5,6 @@ from langchain_openai import ChatOpenAI
 
 def get_history_aware_retriever(vectorstore):
     """
-    이전 대화 기록을 참고하여 사용자의 모호한 질문을
-    검색에 적합한 독립적인 질문으로 재구성하는 Retriever를 반환합니다.
-
     Args:
         vectorstore: 벡터 저장소 객체
 
